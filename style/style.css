@@ -1,0 +1,290 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.page-header-exp {
+	padding-bottom: 9px;
+	margin: 110px 0 20px;
+}
+
+
+/* NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/*CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* INDEX CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
+
+/* Experiments */
+#quadro {
+	width:370px;
+	height:270px;
+	text-align:left;
+	background:url(../experimentos/quadro/images/quadror.jpg) no-repeat;
+}
+
+.chaves {
+	position:relative;
+	float:left;
+	cursor:pointer;
+}
+
+.lamp {
+	position:relative;
+	float:right;
+
+}
+
+#pos-lamp-1 {
+	top:64px;
+	right:7px;
+}
+
+#pos-lamp-2 {
+	top:-8px;
+	left:11px;
+}
+
+#pos-lamp-3 {
+	top:64px;
+	left:20px;
+}
+
+#pos-lamp-4 {
+	top:-8px;
+	right:91px;
+}
+
+#pos-lamp-5 {
+	top:58px;
+	right:33px;
+}
+
+#pos-lamp-6 {
+	top:135px;
+	left:27px;
+}
+
+#chave-1-on {
+	top:178px;
+	left:85px;
+}
+
+#chave-2-on {
+	top:27px;
+	left:110px;
+}
+
+#chave-3-on {
+	top:-28px;
+	left:124px;
+	margin:0 15px;
+}
+
+#chave-4-on {
+	top:27px;
+	left:175px;
+}
+
+#chave-1-off {
+	top:155px;
+	left:85px;
+}
+
+#chave-2-off {
+	top:4px;
+	left:110px;
+}
+
+#chave-3-off {
+	top:-20px;
+	left:109px;
+}
+
+#chave-4-off {
+	top:4px;
+	left:174px;
+}
+
+.hide {
+	display:none;
+}
+
+.lamp-off {
+	background:url(../experimentos/quadro/images/off.png) center no-repeat;
+	width:58px;
+	height:70px;
+}
+
+.lamp-on {
+	background:url(../experimentos/quadro/images/shape8.png) center no-repeat;
+	width:58px;
+	height:70px;
+}
+
+
+@media (max-width: 768px) {
+	.desk{
+		visibility:hidden;
+		display: none;
+		width:0;
+		height:0;
+		}
+}
+@media (min-width: 768px) {
+	.mob{
+		visibility:hidden;
+		display: none;
+		width:0;
+		height:0;
+	}
+	
+
+	
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+	
+
+}
+
+
+

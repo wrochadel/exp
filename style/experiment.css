@@ -1,0 +1,26 @@
+
+.experiment{
+	  position: absolute;
+
+}
+
+.experiment h1{
+	text-align:center;
+}
+
+.experiment .container{
+	
+}
+.page-header-exp {
+	padding-bottom: 9px;
+	margin: 110px 0 20px;
+}
+
+
+[class*="col-md-6"] {
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+
